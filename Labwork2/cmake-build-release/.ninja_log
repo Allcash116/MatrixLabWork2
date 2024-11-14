@@ -1,0 +1,11 @@
+# ninja log v5
+2	946	1731533331920558320	CMakeFiles/Labwork2.dir/Console.cpp.o	6bd5a18fb710b8da
+1	967	1731533331946378651	CMakeFiles/Labwork2.dir/Manager.cpp.o	13639d52c894f99d
+2	979	1731533331957188732	CMakeFiles/Labwork2.dir/Line.cpp.o	e1e9ed1109787db
+949	980	1731533331960133479	CMakeFiles/Labwork2.dir/Data.cpp.o	872f5edab04762bd
+1	990	1731533331968980576	CMakeFiles/Labwork2.dir/main.cpp.o	dd96d1385d469d86
+2	1007	1731533331986963196	CMakeFiles/Labwork2.dir/DataRecipient.cpp.o	f8fb958d3464252f
+2	1107	1731533332087015920	CMakeFiles/Labwork2.dir/Validation.cpp.o	b8745c22bf8ca7c0
+979	1448	1731533332426833026	CMakeFiles/Labwork2.dir/Randomizer.cpp.o	395c4d043c0f9a
+967	1458	1731533332438171312	CMakeFiles/Labwork2.dir/Symbol.cpp.o	27124c4ca37ee013
+1458	1570	1731533332553766610	Labwork2	516a8a87b5f76ea3
