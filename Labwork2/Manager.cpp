@@ -11,15 +11,21 @@
 #include "Data.h"
 
 void Manager::ManagerProgramm() {
+    system("clear");
     while(true) {
-        system("clear");
         Data::OverwriteConsoleSize();
-        CreateLine();
-        for(int i = 0; i < Data::GetWidthConsole() + Data::GetLenght(); i++) {
-            Lines.back().UpdateLine();
-            Console::SetCursorPosition(1,1);
+        if(Lines.size() < 2) {
             usleep(1000 * Data::GetSpeed());
+            CreateLine();
         }
+        for (auto object = Lines.begin(); object != Lines.end(); ++object) {
+            object->UpdateLine();
+            if(object->LineStatus()) {
+                Lines.erase(object);
+            }
+        }
+        Console::SetCursorPosition(1,1);
+        usleep(1000 * Data::GetSpeed());
     }
 }
 

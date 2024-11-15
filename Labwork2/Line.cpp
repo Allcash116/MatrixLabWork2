@@ -67,6 +67,12 @@ void Line::EraseLastColumn() {
     }
 }
 
+bool Line::LineStatus() {
+    if (CoordinateLineX > Data::GetWidthConsole() + Data::GetLenght()) {
+        return true;
+    }
+    return false;
+}
 
 void Line::UpdateLine() {
     if (CoordinateLineX <= Data::GetLenght()) {

@@ -24,6 +24,7 @@ class Line {
     void EraseLastColumn();
 
 public:
+    bool LineStatus();
     void UpdateLine();
     Line(){
         CoordinateLineX = 1;

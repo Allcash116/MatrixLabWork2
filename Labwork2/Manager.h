@@ -9,6 +9,7 @@
 using namespace std;
 
 class Manager {
+    int quant = 0;
     vector<Line> Lines;
     void ManagerProgramm();
     void CreateLine();
