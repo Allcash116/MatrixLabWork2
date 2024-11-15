@@ -13,6 +13,9 @@ class Randomizer {
 public:
     static char getRandomChar();
     static int getRandomColor();
+
+    static int GetRandomInt(int numberBegin,int numberEnd);
+
     static int getRandomHeight();
 };
 

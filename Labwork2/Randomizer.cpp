@@ -21,6 +21,15 @@ int Randomizer::getRandomColor() {
     return randomColor;
 }
 
+
+int Randomizer::GetRandomInt(int numberBegin, int numberEnd) {
+    random_device sd;
+    mt19937 gen(sd());
+    uniform_int_distribution<> distr(numberBegin, numberEnd);
+    int randomInt = distr(gen);
+    return randomInt;
+}
+
 int Randomizer::getRandomHeight() {
     int width, height;
     Console::GetConsoleSize(width,height);

@@ -9,8 +9,8 @@
 using namespace std;
 
 class Manager {
-    int quant = 0;
     vector<Line> Lines;
+    vector<int> POINTS_IN_TIME;
     void ManagerProgramm();
     void CreateLine();
 public:

@@ -4,8 +4,11 @@
 
 #ifndef DATA_H
 #define DATA_H
+#include <vector>
+
 #include "Console.h"
 
+using namespace std;
 
 class Data {
     static int SPEED;
@@ -14,17 +17,25 @@ class Data {
     static bool EPYLEPSY;
     static int WIDTH_CONSOLE;
     static int HEIGHT_CONSOLE;
+    static vector<int> POINTS_IN_TIME;
 public:
     static void SetValues(int speed, int lenght, int count_per_second, bool epylepsy) {
         SPEED = 1000 / speed;
         LENGHT = lenght;
-        COUNT_PER_SECOND = count_per_second;
+        COUNT_PER_SECOND = 1000 / count_per_second;
         EPYLEPSY = epylepsy;
         Console::GetConsoleSize(WIDTH_CONSOLE,HEIGHT_CONSOLE);
+
     };
+
     static void OverwriteConsoleSize() {
         Console::GetConsoleSize(WIDTH_CONSOLE,HEIGHT_CONSOLE);
     }
+
+    static vector<int> GetPointsInTime();
+
+    static void ClearPointsInTime();
+
     static int GetSpeed() {
         return SPEED;
     }
